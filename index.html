@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Event Management</h1>
+        <p>Your one-stop platform for all events</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div class="main-section" id="home">
+        <h2>Welcome to Event Management</h2>
+        <p>Find and manage events effortlessly.</p>
+    </div>
+
+    <!-- Events Section -->
+    <div class="main-section" id="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-section">
+            <div class="event-card">
+                <h3>Event 1</h3>
+                <h3>Birthaday Party</h3>
+                <p>Date: 25th October 2024</p>
+                <p>Location: Hydrabad</p>
+                <button><a href="hyd.html">Learn More</a></button>
+            </div>
+            <div class="event-card">
+                <h3>Event 2</h3>
+                <p>Date: 12th November 2024</p>
+                <p>Location: Pune</p>
+                <button><a href="pune.html">Learn More</a></button>
+            </div>
+            <div class="event-card">
+                <h3>Event 3</h3>
+                <h3>Music Concert</h3>
+                <p>Date: 5th December 2024</p>
+                <p>Location: India</p>
+                <button><a href="mumbai.html">Learn More</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Section -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-date"></p>
+            <p id="popup-location"></p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="main-section" id="contact">
+        <h2>Contact Us</h2>
+        <form 
+        action="https://formspree.io/f/xqakaovo"
+        method="POST"
+        id="contactForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p id="form-message"></p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Event Management. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Section -->
+    <script src="script.js"></script>
+
+</body>
+</html>
